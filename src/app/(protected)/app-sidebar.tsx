@@ -19,11 +19,11 @@ const items = [
     url: "/qa",
     icon: Bot
    },
-    {
-    title: "Meetings",
-    url: "/meetings",
-    icon: Presentation
-   },
+//     {
+//     title: "Meetings",
+//     url: "/meetings",
+//     icon: Presentation
+//    },
     {
     title: "Billing",
     url: "/billing",
@@ -81,7 +81,7 @@ export const AppSidebar = () => {
                     return (
                     <SidebarMenuItem key={project.name}>
                         <SidebarMenuButton onClick={()=>{setProjectId(project.id)}} asChild>
-                        <div>
+                        <div className="cursor-pointer">
                             <div className={
                           cn(
                             'rounded-sm border size-6 flex items-center justify-center text-sm bg-white text-primary', {
@@ -91,7 +91,7 @@ export const AppSidebar = () => {
                             }>
                             P
                             </div>
-                            <span>{project.name}</span>
+                            <span >{project.name}</span>
                         </div>
                         </SidebarMenuButton>
                     </SidebarMenuItem>
