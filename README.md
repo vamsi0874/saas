@@ -1,6 +1,7 @@
 
 
-# ⚡ GitHub SaaS – AI-Powered Repository Summarizer & Chatbot [Link](https://saas-55ui.vercel.app/)
+# ⚡ GitHub SaaS – AI-Powered Repository Summarizer & Chatbot 
+[live Link](https://saas-55ui.vercel.app/)
 
 
 
