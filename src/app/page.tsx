@@ -1,25 +1,18 @@
-// import Link from "next/link";
+
 
 import Link from "next/link";
 
-// import { LatestPost } from "@/app/_components/post";
-// import { api, HydrateClient } from "@/trpc/server";
-
-// export default async function Home() {
-//   const hello = await api.post.hello({ text: "from tRPC" });
-
-//   void api.post.getLatest.prefetch();
-
-//   return (
-//     <div>
-//       hello
-//     </div>
-//   );
-// }
-
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-gray-50 p-6 flex flex-col items-center">
+    <main className="min-h-screen bg-gradient-to-br from-white to-gray-50 p-6 flex flex-col items-center relative">
+      
+     
+      <div className="absolute top-4 right-4 bg-white border border-gray-200 shadow-md rounded-md px-4 py-2 text-sm text-gray-700 z-10">
+        <p>Test credentials</p>
+        <p><strong>Email:</strong> v@gmail.com</p>
+        <p><strong>Password:</strong> v@161718</p>
+      </div>
+
       <div className="max-w-4xl text-center space-y-6">
         <h1 className="text-5xl font-bold text-gray-900 leading-tight">
           Understand Any GitHub Repository in Seconds
@@ -68,4 +61,3 @@ export default function HomePage() {
     </main>
   );
 }
-
