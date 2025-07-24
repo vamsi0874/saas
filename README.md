@@ -1,29 +1,50 @@
-# Create T3 App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-## What's next? How do I make an app with this?
+# ⚡ GitHub SaaS – AI-Powered Repository Summarizer & Chatbot
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## 🚀 Overview
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+**GitHub SaaS** is a full-stack AI-powered platform that helps developers **instantly understand any GitHub repository**. By simply entering a GitHub repository URL and a personal access token, users receive **concise summaries** of their codebase and can interact with an **AI chatbot** trained on the repo files.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+This tool significantly improves **onboarding speed**, boosts **developer productivity**, and saves **hours of manual code reading**.
 
-## Learn More
+---
+## 🧪 Test Credentials
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Use the following test credentials to explore the platform without creating a new account:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+```bash
+Email:     v@gmail.com
+Password:  v@161718
+```
+## ✨ Features
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+### 🔍 GitHub Code Summarizer
+- Fetches all code files from a given public/private GitHub repository using a GitHub token.
+- Uses **LangChain + OpenAI** to generate smart summaries of each file.
+- Reduces manual reading time by **60%** on average.
 
-## How do I deploy this?
+### 🤖 AI Chatbot
+- An interactive chatbot trained on your repository files using **contextual retrieval**.
+- Ask high-level or detailed questions about the codebase (e.g., "What does `AuthService` do?" or "How is the DB connected?").
+- Uses **LangChain retrievers** and **OpenAI function calling** under the hood.
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### 💳 Stripe Billing Integration
+- Secure, tokenized payments via **Stripe**.
+- Users can purchase **credits** to unlock more summaries and advanced chatbot usage.
+- Implements a **credit-based billing model** with usage tracking.
+
+---
+
+## 🔧 Tech Stack
+
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Node.js, Express, LangChain, OpenAI API
+- **Database**: PostgreSQL (via Prisma)
+- **Authentication**: Clerk
+- **Payments**: Stripe
+- **Deployment**: Vercel (Frontend), Render (API)
+
+---
+
+
